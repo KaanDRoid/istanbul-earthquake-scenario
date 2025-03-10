@@ -40,12 +40,6 @@ Open and run the notebook (`earthq.ipynb`) in Jupyter Notebook or JupyterLab to 
 - Interactive Folium choropleth map visualizing damage distribution across Istanbul.
 - Linear Regression model for predicting casualties from damaged buildings, evaluated using Mean Squared Error and R².
 
-## Potential Enhancements
-
-- Incorporate additional features (e.g., building types, population density).
-- Automate data pipeline for continuous updates.
-- Develop dashboards with interactive tools (Plotly Dash, Streamlit).
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
