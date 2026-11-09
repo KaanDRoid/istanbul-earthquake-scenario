@@ -1,0 +1,9 @@
+split,model,r2_mean,r2_std,mae_mean,mae_std,poisson_dev_mean,poisson_dev_std
+random 5-fold,Ratio baseline (very heavy only),0.711,0.04,11.698,2.174,10.921,2.037
+random 5-fold,Linear regression,0.747,0.035,12.157,1.53,17.29,5.066
+random 5-fold,Poisson GLM (log1p features),0.763,0.06,10.219,1.705,9.416,1.597
+random 5-fold,Gradient boosting (Poisson loss),0.691,0.04,11.23,2.134,10.869,2.436
+grouped by district 5-fold,Ratio baseline (very heavy only),0.587,0.397,11.666,3.424,11.087,4.466
+grouped by district 5-fold,Linear regression,0.646,0.295,12.398,2.961,21.737,16.081
+grouped by district 5-fold,Poisson GLM (log1p features),0.652,0.253,10.682,3.53,10.055,3.884
+grouped by district 5-fold,Gradient boosting (Poisson loss),0.553,0.319,12.227,4.875,12.819,5.338
