@@ -1,0 +1,5 @@
+measure,neighbourhoods,spearman_absolute_vs_per_capita,spearman_nonzero_only,nonzero_neighbourhoods,top10_overlap,top50_overlap
+deaths + serious injuries,811,0.931,0.837,607,0.1,0.28
+deaths,811,0.926,0.826,607,0.1,0.32
+damage index,811,0.528,0.528,811,0.0,0.18
+shelter need,811,0.637,0.636,810,0.0,0.18
