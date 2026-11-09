@@ -1,0 +1,5 @@
+damage_level,grouped_cv_r2_mean,grouped_cv_r2_std,pooled_oof_r2,spearman_with_target
+very heavy,0.499,0.494,0.655,0.874
+heavy,0.339,0.626,0.505,0.831
+moderate,0.187,0.513,0.323,0.787
+light,0.138,0.266,0.256,0.726

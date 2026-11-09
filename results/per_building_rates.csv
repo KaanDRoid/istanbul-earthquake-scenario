@@ -1,0 +1,5 @@
+damage_level,buildings_total,casualties_per_building,share_of_fitted_casualties
+very heavy,13496,1.67,0.9328
+heavy,34334,0.0,0.0
+moderate,146512,0.0,0.0
+light,301524,0.0054,0.0672

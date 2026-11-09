@@ -1,0 +1,41 @@
+split,model,fold,r2,mae,poisson_dev
+random 5-fold,Ratio baseline (very heavy only),0,0.7241,10.2638,9.662
+random 5-fold,Ratio baseline (very heavy only),1,0.6817,12.0977,11.7407
+random 5-fold,Ratio baseline (very heavy only),2,0.7548,12.9317,9.8723
+random 5-fold,Ratio baseline (very heavy only),3,0.735,8.8458,9.2009
+random 5-fold,Ratio baseline (very heavy only),4,0.6584,14.35,14.1269
+random 5-fold,Linear regression,0,0.7246,11.6866,23.4869
+random 5-fold,Linear regression,1,0.7391,12.156,17.8867
+random 5-fold,Linear regression,2,0.8082,12.5079,10.549
+random 5-fold,Linear regression,3,0.732,10.096,14.2241
+random 5-fold,Linear regression,4,0.7311,14.3403,20.301
+random 5-fold,Poisson GLM (log1p features),0,0.7729,8.953,8.6489
+random 5-fold,Poisson GLM (log1p features),1,0.6864,10.9795,10.2101
+random 5-fold,Poisson GLM (log1p features),2,0.8379,10.7679,8.1926
+random 5-fold,Poisson GLM (log1p features),3,0.7203,8.0588,8.1757
+random 5-fold,Poisson GLM (log1p features),4,0.7971,12.3362,11.8537
+random 5-fold,Gradient boosting (Poisson loss),0,0.6561,10.4941,10.0414
+random 5-fold,Gradient boosting (Poisson loss),1,0.7511,9.6928,8.3493
+random 5-fold,Gradient boosting (Poisson loss),2,0.7035,13.5567,13.9361
+random 5-fold,Gradient boosting (Poisson loss),3,0.6529,8.9806,9.1058
+random 5-fold,Gradient boosting (Poisson loss),4,0.6933,13.4282,12.9143
+grouped by district 5-fold,Ratio baseline (very heavy only),0,0.6666,12.7994,11.8198
+grouped by district 5-fold,Ratio baseline (very heavy only),1,0.7659,15.9442,14.8071
+grouped by district 5-fold,Ratio baseline (very heavy only),2,0.8255,9.2443,6.4391
+grouped by district 5-fold,Ratio baseline (very heavy only),3,0.794,7.2589,6.504
+grouped by district 5-fold,Ratio baseline (very heavy only),4,-0.1151,13.0848,15.8635
+grouped by district 5-fold,Linear regression,0,0.7355,13.7485,17.8795
+grouped by district 5-fold,Linear regression,1,0.7652,16.5331,47.3403
+grouped by district 5-fold,Linear regression,2,0.8576,9.4545,8.0908
+grouped by district 5-fold,Linear regression,3,0.7469,9.6679,9.1745
+grouped by district 5-fold,Linear regression,4,0.1244,12.5877,26.2
+grouped by district 5-fold,Poisson GLM (log1p features),0,0.8569,9.5277,8.5295
+grouped by district 5-fold,Poisson GLM (log1p features),1,0.6986,16.0602,13.6389
+grouped by district 5-fold,Poisson GLM (log1p features),2,0.7249,8.6313,5.424
+grouped by district 5-fold,Poisson GLM (log1p features),3,0.7687,7.0447,8.148
+grouped by district 5-fold,Poisson GLM (log1p features),4,0.2134,12.1477,14.5353
+grouped by district 5-fold,Gradient boosting (Poisson loss),0,0.7928,10.678,10.0622
+grouped by district 5-fold,Gradient boosting (Poisson loss),1,0.556,20.4807,19.7994
+grouped by district 5-fold,Gradient boosting (Poisson loss),2,0.7828,9.1045,6.6031
+grouped by district 5-fold,Gradient boosting (Poisson loss),3,0.6182,8.3876,10.899
+grouped by district 5-fold,Gradient boosting (Poisson loss),4,0.0129,12.4828,16.7335
