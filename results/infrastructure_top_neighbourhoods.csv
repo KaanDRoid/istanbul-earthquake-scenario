@@ -1,0 +1,41 @@
+measure,position,district,neighbourhood,value,damage_index
+natural gas,1,Avcılar,Yeşilkent,4.0,398.04
+natural gas,2,Beylikdüzü,Yakuplu,4.0,280.4
+natural gas,3,Beylikdüzü,Dereağzı,4.0,239.28
+natural gas,4,Bakırköy,Yeşilköy,3.0,438.02
+natural gas,5,Bakırköy,Şenlikköy,3.0,296.06
+natural gas,6,Silivri,Selimpaşa,3.0,221.28
+natural gas,7,Avcılar,Cihangir,3.0,213.72
+natural gas,8,Beylikdüzü,Kavaklı,3.0,145.88
+natural gas,9,Beylikdüzü,Marmara,3.0,95.96
+natural gas,10,Küçükçekmece,İnönü,2.0,336.88
+drinking water,1,Beylikdüzü,Dereağzı,7.0,239.28
+drinking water,2,Beylikdüzü,Yakuplu,5.0,280.4
+drinking water,3,Silivri,Selimpaşa,5.0,221.28
+drinking water,4,Beylikdüzü,Kavaklı,5.0,145.88
+drinking water,5,Beylikdüzü,Adnan Kahveci,5.0,110.18
+drinking water,6,Bakırköy,Yeşilköy,4.0,438.02
+drinking water,7,Avcılar,Yeşilkent,4.0,398.04
+drinking water,8,Avcılar,Cihangir,4.0,213.72
+drinking water,9,Bakırköy,Şenlikköy,3.0,296.06
+drinking water,10,Tuzla,Aydınlı,3.0,240.72
+wastewater,1,Beylikdüzü,Dereağzı,14.0,239.28
+wastewater,2,Beylikdüzü,Yakuplu,13.0,280.4
+wastewater,3,Beylikdüzü,Kavaklı,13.0,145.88
+wastewater,4,Bakırköy,Yeşilköy,11.0,438.02
+wastewater,5,Tuzla,Aydınlı,9.0,240.72
+wastewater,6,Avcılar,Cihangir,9.0,213.72
+wastewater,7,Bakırköy,Şenlikköy,8.0,296.06
+wastewater,8,Beylikdüzü,Adnan Kahveci,8.0,110.18
+wastewater,9,Küçükçekmece,Halkalı Merkez,7.0,235.7
+wastewater,10,Bahçelievler,Yenibosna Merkez,7.0,226.22
+combined index,1,Beylikdüzü,Dereağzı,12.741,239.28
+combined index,2,Beylikdüzü,Yakuplu,11.047,280.4
+combined index,3,Beylikdüzü,Kavaklı,10.149,145.88
+combined index,4,Bakırköy,Yeşilköy,8.842,438.02
+combined index,5,Avcılar,Cihangir,8.229,213.72
+combined index,6,Avcılar,Yeşilkent,7.899,398.04
+combined index,7,Beylikdüzü,Adnan Kahveci,7.717,110.18
+combined index,8,Silivri,Selimpaşa,7.695,221.28
+combined index,9,Bakırköy,Şenlikköy,7.228,296.06
+combined index,10,Beylikdüzü,Marmara,6.922,95.96

@@ -1,0 +1,7 @@
+split,model,r2_mean,r2_std,mae_mean,mae_std,poisson_dev_mean,poisson_dev_std
+random 5-fold,Poisson GLM (damage only),0.763,0.06,10.219,1.705,9.416,1.597
+random 5-fold,Poisson GLM + log(residents) as feature,0.88,0.052,6.629,1.258,3.724,0.433
+random 5-fold,Poisson GLM + log(residents) offset,0.873,0.043,8.075,0.768,5.538,0.496
+grouped by district 5-fold,Poisson GLM (damage only),0.652,0.253,10.682,3.53,10.055,3.884
+grouped by district 5-fold,Poisson GLM + log(residents) as feature,0.84,0.099,7.051,2.44,4.126,0.488
+grouped by district 5-fold,Poisson GLM + log(residents) offset,0.864,0.051,8.097,2.516,5.672,1.062

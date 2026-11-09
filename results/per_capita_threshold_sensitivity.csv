@@ -1,0 +1,7 @@
+min_population,neighbourhoods,residents_covered_share,max_casualties_per_1000,top20_median_population,top20_overlap_with_main,spearman_casualties_vs_per_capita
+0,959,1.0,26.786,1951.5,0.6,0.937
+250,910,0.999,13.793,3861.5,0.75,0.934
+500,863,0.998,13.793,4291.5,0.85,0.931
+1000,811,0.996,13.793,5750.0,1.0,0.931
+2000,747,0.99,13.793,7559.5,0.9,0.935
+5000,654,0.97,13.793,13210.0,0.6,0.951

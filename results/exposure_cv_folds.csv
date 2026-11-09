@@ -1,0 +1,31 @@
+split,model,fold,r2,mae,poisson_dev
+random 5-fold,Poisson GLM (damage only),0,0.7729,8.953,8.6489
+random 5-fold,Poisson GLM (damage only),1,0.6864,10.9795,10.2101
+random 5-fold,Poisson GLM (damage only),2,0.8379,10.7679,8.1926
+random 5-fold,Poisson GLM (damage only),3,0.7203,8.0588,8.1757
+random 5-fold,Poisson GLM (damage only),4,0.7971,12.3362,11.8537
+random 5-fold,Poisson GLM + log(residents) as feature,0,0.9006,6.5181,3.7468
+random 5-fold,Poisson GLM + log(residents) as feature,1,0.8927,6.2394,3.7273
+random 5-fold,Poisson GLM + log(residents) as feature,2,0.8151,8.7349,4.4186
+random 5-fold,Poisson GLM + log(residents) as feature,3,0.8423,5.3589,3.3027
+random 5-fold,Poisson GLM + log(residents) as feature,4,0.947,6.2916,3.4266
+random 5-fold,Poisson GLM + log(residents) offset,0,0.8143,8.9483,6.3372
+random 5-fold,Poisson GLM + log(residents) offset,1,0.8725,8.0437,5.5052
+random 5-fold,Poisson GLM + log(residents) offset,2,0.8986,8.6049,5.4892
+random 5-fold,Poisson GLM + log(residents) offset,3,0.8519,6.9574,5.3798
+random 5-fold,Poisson GLM + log(residents) offset,4,0.9277,7.8206,4.9766
+grouped by district 5-fold,Poisson GLM (damage only),0,0.8569,9.5277,8.5295
+grouped by district 5-fold,Poisson GLM (damage only),1,0.6986,16.0602,13.6389
+grouped by district 5-fold,Poisson GLM (damage only),2,0.7249,8.6313,5.424
+grouped by district 5-fold,Poisson GLM (damage only),3,0.7687,7.0447,8.148
+grouped by district 5-fold,Poisson GLM (damage only),4,0.2134,12.1477,14.5353
+grouped by district 5-fold,Poisson GLM + log(residents) as feature,0,0.9486,6.2183,4.2953
+grouped by district 5-fold,Poisson GLM + log(residents) as feature,1,0.7833,11.3471,4.8961
+grouped by district 5-fold,Poisson GLM + log(residents) as feature,2,0.9081,6.4305,3.746
+grouped by district 5-fold,Poisson GLM + log(residents) as feature,3,0.7008,5.2907,3.7232
+grouped by district 5-fold,Poisson GLM + log(residents) as feature,4,0.8582,5.9666,3.9675
+grouped by district 5-fold,Poisson GLM + log(residents) offset,0,0.9451,6.8448,4.4909
+grouped by district 5-fold,Poisson GLM + log(residents) offset,1,0.8251,12.523,6.917
+grouped by district 5-fold,Poisson GLM + log(residents) offset,2,0.8823,7.5815,5.4204
+grouped by district 5-fold,Poisson GLM + log(residents) offset,3,0.8329,7.1969,6.6285
+grouped by district 5-fold,Poisson GLM + log(residents) offset,4,0.8332,6.3374,4.9052

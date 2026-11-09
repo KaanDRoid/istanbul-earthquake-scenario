@@ -1,0 +1,14 @@
+district,neighbourhood,mahalle_koy_uavt,tuik_uavt,population,note
+Beykoz,Poyrazköy,16634,191719,905,scenario carries the former village code
+Silivri,Büyük Kılıçlı,16775,191849,1160,scenario carries the former village code
+Silivri,Büyük Sinekli,16771,191843,407,scenario carries the former village code
+Silivri,Fener,16765,191839,1472,scenario carries the former village code
+Silivri,Küçük Sinekli,16779,191857,166,scenario carries the former village code
+Şile,Bozgoca,16785,191865,102,scenario carries the former village code
+Şile,Gökmaşlı,16807,191907,199,scenario carries the former village code
+Şile,Teke,16816,191925,495,scenario carries the former village code
+Başakşehir,İkitelli Osb,,139666,83,TÜİK neighbourhood without a scenario row
+Beylikdüzü,Beylikdüzüosb,,40896,14,TÜİK neighbourhood without a scenario row
+Ümraniye,Dudullu Osb,,40734,16,TÜİK neighbourhood without a scenario row
+Ümraniye,Finanskent,,199721,730,TÜİK neighbourhood without a scenario row
+Ümraniye,Yenişehir,,199723,6444,TÜİK neighbourhood without a scenario row

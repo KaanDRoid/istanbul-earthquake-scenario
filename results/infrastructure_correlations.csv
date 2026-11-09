@@ -1,0 +1,15 @@
+x,y,n,spearman,pearson_log1p
+damage_index,dogalgaz_boru_hasari,959,0.612,0.597
+damage_index,icme_suyu_boru_hasari,959,0.669,0.645
+damage_index,atik_su_boru_hasari,959,0.81,0.779
+damage_index,utility_index,959,0.799,0.734
+damaged_buildings,dogalgaz_boru_hasari,959,0.631,0.578
+damaged_buildings,icme_suyu_boru_hasari,959,0.675,0.616
+damaged_buildings,atik_su_boru_hasari,959,0.81,0.747
+damaged_buildings,gecici_barinma,959,0.876,0.858
+moderate_or_worse,gecici_barinma,959,0.854,0.832
+damage_index,gecici_barinma,959,0.849,0.827
+population,gecici_barinma,959,0.852,0.876
+population,utility_index,959,0.631,0.532
+buildings,utility_index,959,0.639,0.572
+buildings,gecici_barinma,959,0.67,0.71

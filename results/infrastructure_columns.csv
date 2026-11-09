@@ -1,0 +1,7 @@
+column,meaning,all_integer,zero_share,mean,median,p90,max,city_total,top10pct_share_of_total
+dogalgaz_boru_hasari,natural gas pipe repair points,True,0.679,0.371,0.0,1.0,4,356,0.404
+icme_suyu_boru_hasari,drinking water pipe repair points,True,0.616,0.481,0.0,1.0,7,461,0.41
+atik_su_boru_hasari,wastewater pipe repair points,True,0.396,1.087,1.0,2.0,14,1042,0.425
+gecici_barinma,temporary shelter need (households),True,0.003,871.656,412.0,2384.0,9075,835918,0.43
+hastanede_tedavi_sayisi,injured needing hospital treatment,True,0.225,41.331,11.0,128.2,592,39636,0.554
+hafif_yarali_sayisi,lightly injured,True,0.166,78.457,26.0,238.0,1028,75240,0.524
