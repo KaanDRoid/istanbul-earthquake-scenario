@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-from sklearn.base import clone
+from sklearn.base import BaseEstimator, RegressorMixin, clone
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.linear_model import LinearRegression, PoissonRegressor
 from sklearn.metrics import mean_absolute_error, mean_poisson_deviance, r2_score
@@ -85,6 +85,72 @@ def cross_validate(df: pd.DataFrame, target: str = TARGET):
                 )
             oof[(split_name, model_name)] = pred
     folds_df = pd.DataFrame(fold_rows)
+    summary = folds_df.groupby(["split", "model"], sort=False)[
+        ["r2", "mae", "poisson_dev"]
+    ].agg(["mean", "std"])
+    summary.columns = [f"{a}_{b}" for a, b in summary.columns]
+    return folds_df, summary.reset_index(), oof
+
+
+def _glm():
+    return make_pipeline(
+        FunctionTransformer(np.log1p),
+        StandardScaler(),
+        PoissonRegressor(alpha=1e-4, max_iter=2000),
+    )
+
+
+class ExposurePoissonGLM(RegressorMixin, BaseEstimator):
+    """Poisson GLM with log(exposure) as a fixed offset.
+
+    The last column of X is the exposure (residents). Fitting the rate
+    y / exposure with sample weights equal to the exposure gives the same
+    estimating equations as a Poisson GLM with offset log(exposure).
+    """
+
+    def fit(self, X, y):
+        X = np.asarray(X, dtype=float)
+        exposure = X[:, -1]
+        self.model_ = _glm().fit(
+            X[:, :-1], y / exposure, poissonregressor__sample_weight=exposure
+        )
+        return self
+
+    def predict(self, X):
+        X = np.asarray(X, dtype=float)
+        return self.model_.predict(X[:, :-1]) * X[:, -1]
+
+
+def exposure_models() -> dict:
+    """Poisson GLM variants with and without residents as exposure."""
+    return {
+        "Poisson GLM (damage only)": (_glm(), DAMAGE_COLS),
+        "Poisson GLM + log(residents) as feature": (_glm(), DAMAGE_COLS + ["population"]),
+        "Poisson GLM + log(residents) offset": (
+            ExposurePoissonGLM(),
+            DAMAGE_COLS + ["population"],
+        ),
+    }
+
+
+def exposure_cv(df: pd.DataFrame, target: str = TARGET):
+    """Cross-validate the exposure variants with the same folds as cross_validate."""
+    if df["population"].isna().any() or (df["population"] <= 0).any():
+        raise ValueError("Every row needs a positive population for the offset model")
+    y = df[target].to_numpy(dtype=float)
+    rows, oof = [], {}
+    for split_name, (cv, groups) in splitters(df["district"]).items():
+        folds = list(cv.split(df, y, groups))
+        for model_name, (model, cols) in exposure_models().items():
+            X = df[cols].to_numpy(dtype=float)
+            pred = np.zeros_like(y)
+            for k, (tr, te) in enumerate(folds):
+                pred[te] = clone(model).fit(X[tr], y[tr]).predict(X[te])
+                rows.append(
+                    {"split": split_name, "model": model_name, "fold": k, **_scores(y[te], pred[te])}
+                )
+            oof[(split_name, model_name)] = pred
+    folds_df = pd.DataFrame(rows)
     summary = folds_df.groupby(["split", "model"], sort=False)[
         ["r2", "mae", "poisson_dev"]
     ].agg(["mean", "std"])
